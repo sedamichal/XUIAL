@@ -1,0 +1,5 @@
+{
+    "python.autoComplete.extraPaths": [
+        "C:/Dev/conda_envs/xuial/lib/site-packages/cv2.cp311-win_amd64.pyd"
+    ]
+}
