@@ -1,0 +1,113 @@
+[properties]
+# Description: Type: bool
+IMAGE_FREEZE = false
+
+# Description: Values: [SENSOR, ADC_1, ADC_2, TEST_PATTERN_DYNAMIC, TEST_PATTERN_STATIC] | Type: ImageGenerator
+TEST_PATTERN = "ImageGenerator.SENSOR"
+
+# Description: Values: [OPEN, CLOSED] | Type: InternalShutterState
+INTERNAL_SHUTTER_POSITION = "InternalShutterState.OPEN"
+
+# Description: Type: unsigned
+LED_R_BRIGHTNESS_CURRENT = 7
+LED_R_BRIGHTNESS_IN_FLASH = 7
+
+# Description: Type: unsigned
+LED_G_BRIGHTNESS_CURRENT = 7
+LED_G_BRIGHTNESS_IN_FLASH = 7
+
+# Description: Type: unsigned
+LED_B_BRIGHTNESS_CURRENT = 7
+LED_B_BRIGHTNESS_IN_FLASH = 7
+
+# Description: Type: unsigned
+PALETTE_INDEX_CURRENT = 5
+PALETTE_INDEX_IN_FLASH = 5
+
+# Description: Values: [FPS_8_57, FPS_30, FPS_60] | Type: Framerate
+FRAMERATE_CURRENT = "Framerate.FPS_30"
+FRAMERATE_IN_FLASH = "Framerate.FPS_30"
+
+# Description: Values: [PRE_IGC, POST_IGC, POST_COLORING] | Type: VideoFormat
+VIDEO_FORMAT_CURRENT = "VideoFormat.POST_COLORING"
+VIDEO_FORMAT_IN_FLASH = "VideoFormat.POST_IGC"
+
+# Description: Type: bool
+FLIP_IMAGE_VERTICALLY_CURRENT = false
+FLIP_IMAGE_VERTICALLY_IN_FLASH = false
+
+# Description: Type: bool
+FLIP_IMAGE_HORIZONTALLY_CURRENT = false
+FLIP_IMAGE_HORIZONTALLY_IN_FLASH = false
+
+# Description: Values: [PERIODIC, ADAPTIVE] | Type: ShutterUpdateMode
+NUC_UPDATE_MODE_CURRENT = "ShutterUpdateMode.PERIODIC"
+NUC_UPDATE_MODE_IN_FLASH = "ShutterUpdateMode.PERIODIC"
+
+# Description: Type: unsigned
+NUC_MAX_PERIOD_CURRENT = 7200
+NUC_MAX_PERIOD_IN_FLASH = 7200
+
+# Description: Type: double
+NUC_ADAPTIVE_THRESHOLD_CURRENT = 1.0
+NUC_ADAPTIVE_THRESHOLD_IN_FLASH = 1.0
+
+# Description: Values: [B_115200, B_921600, B_3000000] | Type: Baudrate
+UART_BAUDRATE_CURRENT = "Baudrate.B_3000000"
+UART_BAUDRATE_IN_FLASH = "Baudrate.B_3000000"
+
+# Description: Values: [OFF, FRAMES_2, FRAMES_4] | Type: Averaging
+TIME_DOMAIN_AVERAGE_CURRENT = "Averaging.OFF"
+TIME_DOMAIN_AVERAGE_IN_FLASH = "Averaging.OFF"
+
+# Description: Values: [AUTO_GAIN_CONTROL, MANUAL_GAIN_CONTROL] | Type: ImageEqualizationType
+IMAGE_EQUALIZATION_TYPE_CURRENT = "ImageEqualizationType.AUTO_GAIN_CONTROL"
+IMAGE_EQUALIZATION_TYPE_IN_FLASH = "ImageEqualizationType.AUTO_GAIN_CONTROL"
+
+# Description: Type: unsigned
+LINEAR_GAIN_WEIGHT_CURRENT = 1
+LINEAR_GAIN_WEIGHT_IN_FLASH = 1
+
+# Description: Type: unsigned
+CLIP_LIMIT_CURRENT = 10
+CLIP_LIMIT_IN_FLASH = 10
+
+# Description: Type: unsigned
+PLATEAU_TAIL_REJECTION_CURRENT = 0
+PLATEAU_TAIL_REJECTION_IN_FLASH = 0
+
+# Description: Type: unsigned
+MGC_CONTRAST_CURRENT = 16383
+MGC_CONTRAST_IN_FLASH = 16383
+
+# Description: Type: unsigned
+MGC_BRIGHTNESS_CURRENT = 8000
+MGC_BRIGHTNESS_IN_FLASH = 8000
+
+# Description: Type: unsigned
+AGC_NH_SMOOTHING_CURRENT = 2
+AGC_NH_SMOOTHING_IN_FLASH = 2
+
+# Description: Type: bool
+SPATIAL_MEDIAN_FILTER_ENABLE_CURRENT = true
+SPATIAL_MEDIAN_FILTER_ENABLE_IN_FLASH = true
+
+# Description: Type: bool
+DEAD_PIXELS_CORRECTION_ENABLED_CURRENT = true
+DEAD_PIXELS_CORRECTION_ENABLED_IN_FLASH = true
+
+# Description: Type: PresetId
+SELECTED_LENS_RANGE_CURRENT = "PresetId: lens WTC_14, range HIGH_GAIN"
+SELECTED_LENS_RANGE_IN_FLASH = "PresetId: lens WTC_14, range HIGH_GAIN"
+
+# Description: Type: Palette
+PALETTE_USER_1_CURRENT = "Palette: User1"
+PALETTE_USER_1_IN_FLASH = "Palette: User1"
+
+# Description: Type: Palette
+PALETTE_USER_2_CURRENT = "Palette: User2"
+PALETTE_USER_2_IN_FLASH = "Palette: User2"
+
+# Description: Type: DeadPixels
+DEAD_PIXELS_CURRENT = "DeadPixels: 0x"
+DEAD_PIXELS_IN_FLASH = "DeadPixels: 0x"

@@ -1,4 +1,5 @@
 import cv2
 import numpy as np
 
-cv2.im
+np.random.seed(42)
+cv2.setNumThreads(4)
