@@ -71,6 +71,7 @@ Pokud zvolíme práh $T$:
     Součet pravděpodobností: $P_2=\sum_{i=T+1}^{L-1}p_i$
 
 Entropie každé třídy:
+
 $$
 H_1=-\sum_{i=0}^{T}\frac{p_i}{P_1}\ln{\frac{p_i}{P_1}}
 $$
