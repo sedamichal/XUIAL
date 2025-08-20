@@ -80,6 +80,7 @@ H_2=-\sum_{i=T+1}^{L-1}\frac{p_i}{P_2}\ln{\frac{p_i}{P_2}}
 $$
 
 Celková entropie:
+
 $$
 H(T)=H_1+H_2
 $$
