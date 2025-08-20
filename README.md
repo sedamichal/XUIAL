@@ -3,7 +3,6 @@
 ## Device description
 Základní dokumentace v [datovém listu](/camera/documentation/datasheet-172-en-250303.pdf) a [výkresu](/camera/documentation/drawings-177-cs-240627.pdf)
 
-> [!POZNÁMKA]
 > Po registraci zařízení na stránce podpory výrobce jsem zjistil, že v dokumentaci je nesprávný datasheet, takže jsem musel najít správný na webové stránce podpory
 
 Ve specifikacích bylo uvedeno, že zařízení má USB-C video plugin, ale nebyla to pravda, je tam pouze konektor HDMI – to znamená, že je možné vytvářet pouze statické obrázky a stahovat je přes rozhraní USB nebo zachytávat video přes microHDMI.
