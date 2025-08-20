@@ -212,4 +212,5 @@ Je vhodný pro kontinuální optimalizaci, ale existují i varianty pro diskrét
 Může snadno pracovat s více dimenzemi (každá částice má souřadnice ve vícerozměrném prostoru).
 
 ### Aplikace
-Pro vyzkoušení jsem vytvořil [skript](/src/camera_test.py), který slouží jako ukázka segmentací. Jednotlivé způsoby lze různě nastavovat a řadit za sebou, nicméně volání více metod je velmi náročné.
+Pro vyzkoušení jsem vytvořil [skript](/src/camera_test.py), který slouží jako ukázka segmentací.
+Existují tedy dva "procesory" ```PSOKapurEntropyProcessor``` a ```PSOBlockClustering```. Jednotlivé způsoby lze různě nastavovat a řadit za sebou, nicméně volání více metod je velmi náročné.
