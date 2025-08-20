@@ -132,7 +132,7 @@ Označme centroidy $\mathbf{c} = (c_1, c_2, \dots, c_C)$.
 Každý blok $m_k$ se přiřadí ke clusteru:
 
 $$
-\text{assign}(m_k) = \argmin_{j \in \{1,\dots,C\}} \; |m_k - c_j|.
+\text{assign}(m_k) = \arg\min_{j \in \{1,\dots,C\}} \; |m_k - c_j|.
 $$
 
 #### Optimalizační problém
@@ -145,7 +145,7 @@ $$
 Naším cílem je nalézt centroidy $\mathbf{c}^*$, které minimalizují $J$:
 
 $$
-\mathbf{c}^* = \argmin_{\mathbf{c}} J(\mathbf{c}).
+\mathbf{c}^* = \arg\min_{\mathbf{c}} J(\mathbf{c}).
 $$
 
 #### Použití PSO pro hledání centroidů
