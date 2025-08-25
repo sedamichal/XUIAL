@@ -1,9 +1,11 @@
 import cv2
 import tkinter as tk
 from PIL import Image, ImageTk
+from concurrent.futures import ThreadPoolExecutor
+
 
 class CameraCapture:
-    def __init__(self, device_idx=1, processors=None, pause=30):
+    def __init__(self, device_idx=1, processors=None, pause=20):
         self._processors = processors or []
         self._cap = cv2.VideoCapture(device_idx)
         self._pause = pause
@@ -33,8 +35,14 @@ class CameraCapture:
     def _process_frame(self, frame):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
+        # # --- paralelní volání get_mask ---
+        # with ThreadPoolExecutor(max_workers=len(self._processors)) as executor:
+        #     futures = [executor.submit(p.get_mask, gray) for p in self._processors]
+        #     masks = [f.result() for f in futures]
+        # # ---------------------------------
+
         masks = [p.get_mask(gray) for p in self._processors]
-        
+
         imgs = [frame] + [cv2.cvtColor(m, cv2.COLOR_GRAY2BGR) for m in masks]
 
         for canvas, img in zip(self._canvases, imgs):
@@ -45,5 +53,10 @@ class CameraCapture:
             canvas.configure(image=img_tk)
 
     def _on_close(self):
-        self._cap.release()
-        self._root.destroy()
+        self._closed = True
+        try:
+            self._cap.release()
+        finally:
+            # Shut down pool quickly; don't wait forever
+            if self._root is not None:
+                self._root.destroy()

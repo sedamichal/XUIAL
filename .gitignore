@@ -139,6 +139,7 @@ env.bak/
 venv.bak/
 .XUIAL310/
 FireImages/
+*FLIR/
 
 # Spyder project settings
 .spyderproject
